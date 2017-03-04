@@ -1,0 +1,525 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KnowProblem</title>
+    <meta name="Description" content="Legal help at a price you choose">
+
+<!--     <link rel="stylesheet" href="stylesheets/normalize.css" /> -->
+    <link rel="stylesheet" href="stylesheets/foundation.css" />
+    <link rel="stylesheet" href="stylesheets/index style.css" />
+    <link rel="stylesheet" href="stylesheets/index layout.css" />
+    <link rel="stylesheet" href="stylesheets/slider.css" />
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+    <script src="js/pace.js"></script>
+    <link href="stylesheets/pace-theme-flat-top.tmpl.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<div id="wrapper-landing">
+<div id="landing-bg">
+
+<!-- NAV BAR -->
+	<div class="nav" data-aos="fade-down">
+		<nav class="nav-wrapper" id="menu">
+	      <div id="logo">
+	    		<a href="index.html">KnowProblem</a>
+	   	  </div>
+	      <div class="nav-links" id="myTopnav">
+	      	<ul>
+		        <li><a href="#">Problem Portal</a></li>
+		        <li><a href="#">Our Attorneys</a></li>
+		        <li><a href="#">About</a></li>
+		    </ul>
+	      </div>
+	     <div class="menu" id="pull">
+  			<span class="menu-global menu-top"></span>
+  			<span class="menu-global menu-middle"></span>
+  			<span class="menu-global menu-bottom"></span>
+		</div>
+	    </nav>
+  	</div>
+ <!-- END NAV -->
+
+ <div id="cover"></div>
+
+<div class="row align-center">
+ <div class="large-8 columns landing-text">
+ 	<p>Legal help at a price you choose</p>
+ 	<span>Vetted lawyers are waiting to hear about your problem.</span>
+ 	<div class="button-home-wrapper" id="btn">
+	  	<a class="button-home" data-scroll href="#start">GET STARTED</a>
+	</div>
+ </div>
+</div>
+
+</div>
+</div>
+
+<div class="bg-2" id="start">
+	<div class="row align-center">
+	<div class="large-11 columns">
+
+	<div class="row align-center">
+	 <div class="large-11 medium-11 small-12 columns landing-1">
+	 	<p>How does it work?</p>
+	 </div>
+	</div>
+
+ 	<div class="row align-center three">
+	 <div class="large-4 small-12 columns">
+	 	<img src="images/write.png" data-aos="fade-up">
+	 	<p>Use the <a href="#problem">Problem Portal</a> to tell us about your problem.</p>
+	 </div>
+	 <div class="large-4 small-12 columns">
+	 	<img src="images/users.png" data-aos="fade-up">
+	 	<p>Our platform will alert our attorneys near you.</p>
+	 </div>
+	 <div class="large-4 small-12 columns">
+	 	<img src="images/chat.png" data-aos="fade-up">
+	 	<p>Chat with attorneys to find the best match.</p>
+		 </div>
+	 </div>
+	</div>
+	</div>
+</div>
+
+<div class="row align-center problem" id="problem">
+<div class="large-11 columns">
+	<div class="row align-center">
+		<div class="large-11 medium-11 small-12 columns landing-1">
+		<p>The Problem Portal</p>
+		</div>
+	</div>
+	<div class="row align-center">
+		<div class="large-11 medium-11 small-12 columns portal">
+			<p>Use the Problem Portal below to give a description of your problem, which will be sent to attorneys in your area.</p>
+			<p>Everything is kept <b>confidential</b> and <b>secure</b>. Only certified and vetted attorneys have access to the Problem Portal.</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-5 medium-5 columns form" data-aos="fade-up">
+			<label>Name
+        		<input type="text" placeholder="First and/or last" />
+      		</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-5 medium-5 columns form" data-aos="fade-up">
+			<label>Email
+        		<input type="text" placeholder="example@gmail.com" />
+      		</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-10 medium-10 columns form-1" data-aos="fade-up">
+			<label>Tell us about your problem
+        		<textarea placeholder="The more details the better"></textarea>
+      		</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-10 medium-10 columns form-1 budget" data-aos="fade-up">
+			<label>Budget</label>
+			<p>Use the slider or enter an amount.</p>
+			<!-- slider -->
+			<div class="range" data-value="0">
+				<div class="label">
+					<div class="dollar">$</div>
+					<div class="value">0</div>
+					<div class="drop"></div>		
+				</div>
+				<div class="input-box">
+					<input id="input-range" type="range" min="0" max="5000" step="10" value="0"/>
+					<div class="bar"></div>
+				</div>
+			</div>
+			<!-- end slider -->
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-4 medium-4 columns large-offset-1 medium-offset-1 small-offset-1" data-aos="fade-up">
+        	<div class="money">
+    			<input type="text" class="numberOnly" autocomplete="off" maxlength="4" placeholder="00.00" /><div>$</div>
+				</div>
+		</div>
+	</div>
+	<div class="row" id="terms" data-aos="fade-up">
+		<div class="large-10 medium-10 small-10 columns terms">
+			<div class="checkboxFive">
+				<input type="checkbox" id="checkboxFiveInput" value="1" name="" onchange="changeColor()" />
+				<label for="checkboxFiveInput"></label>
+			</div>
+      	<p>YOU ACKNOWLEDGE THAT YOU HAVE READ AND AGREE TO THE <a id="myBtn">TERMS AND CONDITIONS</a>.</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="medium-10 columns medium-offset-1 submit" data-aos="fade-up">
+	 		<div class="btn-1" id="onclick">
+	  			<input type="button" id="submit" disabled value="SUBMIT"/>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" id="modal-y">
+    <span class="close">&times;</span>
+    <h3>TERMS AND CONDITIONS</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+    $('body').addClass('noscroll')
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+    $('body').removeClass('noscroll')
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        $('body').removeClass('noscroll')
+    }
+}
+</script>
+
+<div class="footer">
+	<div class="row align-center">
+		<div class="large-3 columns">
+			<ul>
+				<a>LEGAL</a>
+				<a>SUPPORT</a>
+				<a>CONTACT</a>
+			<ul>
+			<h1>KnowProblem</a>
+		</div>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script>
+	AOS.init({
+		easing: 'ease-out',
+		duration: 300
+	});
+</script>
+
+<script>
+	function changeColor() {
+		var x = document.getElementById('submit')
+		if (x.disabled === true) {
+			x.style.opacity = 1.0
+			x.disabled = false
+		} else {
+			x.style.opacity = 0.4
+			x.disabled = true
+		}
+	}
+</script>
+
+<script>
+$(function() {
+  /* variables */ 
+	var pull 	= $('#pull');
+	menu 		= $('nav ul');
+	menuHeight	= 10;
+    
+    $(pull).on('click', function(e) {
+	    e.preventDefault();
+	    menu.slideToggle(100);
+    });
+    $(window).resize(function(){
+    		var w = $(window).width();
+    		if(w > 320 && menu.is(':hidden')) {
+    			menu.removeAttr('style');
+    		}
+  	});
+});
+</script>
+
+<script>
+	var Menu = {
+  
+  el: {
+    ham: $('.menu'),
+    menuTop: $('.menu-top'),
+    menuMiddle: $('.menu-middle'),
+    menuBottom: $('.menu-bottom')
+  },
+  
+  init: function() {
+    Menu.bindUIactions();
+  },
+  
+  bindUIactions: function() {
+    Menu.el.ham
+        .on(
+          'click',
+        function(event) {
+        Menu.activateMenu(event);
+        event.preventDefault();
+      }
+    );
+  },
+  
+  activateMenu: function() {
+    Menu.el.menuTop.toggleClass('menu-top-click');
+    Menu.el.menuMiddle.toggleClass('menu-middle-click');
+    Menu.el.menuBottom.toggleClass('menu-bottom-click'); 
+  }
+};
+
+Menu.init();
+</script>
+
+<script>
+	var input = $('#input-range');
+
+input.bind('input', function(){
+	getRangeValue(input);
+}).bind('change', function(){
+	getRangeValue(input);	/* for IE */
+});
+
+function getRangeValue(e){
+	var value = $(e).val();
+	$('.value').text(value);
+	$('.range').attr('data-value', value);
+	input.attr('value', value);
+}
+</script>
+
+<script>
+$('a[href*="#"]:not([href="#"])').click(function() {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
+    }
+  }
+});
+</script>
+
+<script>
+$('.money > div').click(function() {
+    $('.money > input:eq('+$('.money > div').index(this)+')').focus();
+});
+
+$('.numberOnly').on('keydown', function(e) {
+	
+  if (this.selectionStart || this.selectionStart == 0) {
+	// selectionStart won't work in IE < 9
+	
+	var key = e.which;
+	var prevDefault = true;
+	
+	var thouSep = ",";  // your seperator for thousands
+	var deciSep = ".";  // your seperator for decimals
+	var deciNumber = 2; // how many numbers after the comma
+	
+	var thouReg = new RegExp(thouSep,"g");
+	var deciReg = new RegExp(deciSep,"g");
+	
+	function spaceCaretPos(val, cPos) {
+		/// get the right caret position without the spaces
+		
+		if (cPos > 0 && val.substring((cPos-1),cPos) == thouSep)
+		  cPos = cPos-1;
+		
+		if (val.substring(0,cPos).indexOf(thouSep) >= 0) {
+		  cPos = cPos - val.substring(0,cPos).match(thouReg).length;
+		}
+		
+		return cPos;
+	}
+	
+	function spaceFormat(val, pos) {
+		/// add spaces for thousands
+		
+		if (val.indexOf(deciSep) >= 0) {
+			var comPos = val.indexOf(deciSep);
+			var int = val.substring(0,comPos);
+			var dec = val.substring(comPos);
+		} else{
+			var int = val;
+			var dec = "";
+		}
+		var ret = [val, pos];
+		
+		if (int.length > 3) {
+			
+			var newInt = "";
+			var spaceIndex = int.length;
+			
+			while (spaceIndex > 3) {
+				spaceIndex = spaceIndex - 3;
+				newInt = thouSep+int.substring(spaceIndex,spaceIndex+3)+newInt;
+				if (pos > spaceIndex) pos++;
+			}
+			ret = [int.substring(0,spaceIndex) + newInt + dec, pos];
+		}
+		return ret;
+	}
+	
+	$(this).on('keyup', function(ev) {
+		
+		if (ev.which == 8) {
+			// reformat the thousands after backspace keyup
+			
+			var value = this.value;
+			var caretPos = this.selectionStart;
+			
+			caretPos = spaceCaretPos(value, caretPos);
+			value = value.replace(thouReg, '');
+			
+			var newValues = spaceFormat(value, caretPos);
+			this.value = newValues[0];
+			this.selectionStart = newValues[1];
+			this.selectionEnd   = newValues[1];
+		}
+	});
+	
+	if ((e.ctrlKey && (key == 65 || key == 67 || key == 86 || key == 88 || key == 89 || key == 90)) ||
+	   (e.shiftKey && key == 9)) // You don't want to disable your shortcuts!
+		prevDefault = false;
+	
+	if ((key < 37 || key > 40) && key != 8 && key != 9 && prevDefault) {
+		e.preventDefault();
+		
+		if (!e.altKey && !e.shiftKey && !e.ctrlKey) {
+		
+			var value = this.value;
+			if ((key > 95 && key < 106)||(key > 47 && key < 58) ||
+			  (deciNumber > 0 && (key == 110 || key == 188 || key == 190))) {
+				
+				var keys = { // reformat the keyCode
+          48: 0, 49: 1, 50: 2, 51: 3,  52: 4,  53: 5,  54: 6,  55: 7,  56: 8,  57: 9,
+          96: 0, 97: 1, 98: 2, 99: 3, 100: 4, 101: 5, 102: 6, 103: 7, 104: 8, 105: 9,
+          110: deciSep, 188: deciSep, 190: deciSep
+				};
+				
+				var caretPos = this.selectionStart;
+				var caretEnd = this.selectionEnd;
+				
+				if (caretPos != caretEnd) // remove selected text
+				value = value.substring(0,caretPos) + value.substring(caretEnd);
+				
+				caretPos = spaceCaretPos(value, caretPos);
+				
+				value = value.replace(thouReg, '');
+				
+				var before = value.substring(0,caretPos);
+				var after = value.substring(caretPos);
+				var newPos = caretPos+1;
+				
+				if (keys[key] == deciSep && value.indexOf(deciSep) >= 0) {
+					if (before.indexOf(deciSep) >= 0) newPos--;
+					before = before.replace(deciReg, '');
+					after = after.replace(deciReg, '');
+				}
+				var newValue = before + keys[key] + after;
+				
+				if (newValue.substring(0,1) == deciSep) {
+					newValue = "0"+newValue;
+					newPos++;
+				}
+				
+				while (newValue.length > 1 && newValue.substring(0,1) == "0" && newValue.substring(1,2) != deciSep) {
+					newValue = newValue.substring(1);
+					newPos--;
+				}
+				
+				if (newValue.indexOf(deciSep) >= 0) {
+					var newLength = newValue.indexOf(deciSep)+deciNumber+1;
+					if (newValue.length > newLength) {
+					  newValue = newValue.substring(0,newLength);
+					}
+				}
+				
+				newValues = spaceFormat(newValue, newPos);
+				
+				this.value = newValues[0];
+				this.selectionStart = newValues[1];
+				this.selectionEnd   = newValues[1];
+			}
+		}
+	}
+	
+	$(this).on('blur', function(e) {
+		
+		if (deciNumber > 0) {
+			var value = this.value;
+			
+			var noDec = "";
+			for (var i = 0; i < deciNumber; i++) noDec += "0";
+			
+			if (value == "0" + deciSep + noDec) {
+        this.value = ""; //<-- put your default value here
+      } else if(value.length > 0) {
+				if (value.indexOf(deciSep) >= 0) {
+					var newLength = value.indexOf(deciSep) + deciNumber + 1;
+					if (value.length < newLength) {
+					  while (value.length < newLength) value = value + "0";
+					  this.value = value.substring(0,newLength);
+					}
+				}
+				else this.value = value + deciSep + noDec;
+			}
+		}
+	});
+  }
+});
+
+$('.price > input:eq(0)').focus();
+</script>
+
+<script>
+//google analytics
+</script>
+
+
+</body>
+</html>
