@@ -1,0 +1,156 @@
+  
+
+  #pull {
+    display:none;
+  }
+
+  nav ul {
+  	padding: 0;
+  	margin: 0;
+  }
+
+  .menu {
+  cursor: pointer;
+  margin: 0 auto;
+  padding-left: 1.25em;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.menu-global {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  left: 0;
+  border-top: 4px solid white;
+  border-radius: 3px;
+  width: 70%;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.menu-top {
+  top: 0;
+}
+
+.menu-middle {
+  top: 14px;
+}
+
+.menu-bottom {
+  top: 28px;
+}
+
+.menu-top-click {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  top: 15px;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+  -webkit-transition: 0.25s 0.1s;
+  transition: 0.25s 0.1s;
+}
+
+.menu-middle-click {
+  opacity: 0;
+}
+
+.menu-bottom-click {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  top: 15px;
+  -webkit-transform: rotate(-410deg);
+          transform: rotate(-410deg);
+  -webkit-transition: 0.25s 0.1s;
+  transition: 0.25s 0.1s;
+}
+
+@media only screen and (max-width: 1023px) {
+
+	.terms p {
+		line-height: 32px;
+		margin-top: 8px;
+	}
+
+	.terms {
+		height: 100px;
+	}
+
+	.modal-content {
+		width: 80%;
+	}
+}
+
+
+@media screen and (max-width: 639px) {
+
+	.modal-content {
+		width: 80%;
+		height: 90%;
+	}
+
+	.nav-links li {
+	  margin: 10px 0px;
+	  width:100%;
+	  display:inline-block;
+	  text-align: center;
+	  height: 50px;
+	  background-color: rgba(255, 255, 255, 0.1);
+	}
+
+	.nav-links {
+		text-align: center;
+		position: fixed;
+		top: 80;
+		left: 0;
+		right: 0;
+	}
+
+	.nav-links li a {
+		line-height: 50px;
+		font-weight: 500;
+	}
+
+	.nav-links ul {
+		display: none;
+		text-align: center;
+		height: 80px;
+	}
+
+	#pull {
+	  display:inline-block;
+	  color:white;
+	  float: right;
+	  position:relative;
+	  top:25px;
+	  right:10px;
+	  font-size: 30px;
+	  line-height: 80px;
+	  padding-right: 20px;
+	}
+
+	#wrapper-landing {
+		background-position: -70% 0px;
+	}
+
+	.three p {
+		margin-bottom: 50px;
+		margin-top: 0px;
+	}
+
+	.terms {
+		height: 140px;
+		margin-left: 40px;
+	}
+
+	.terms p {
+		line-height: 32px;
+		margin-top: 8px;
+	}
+
+	.btn-1 input {
+		display: block;
+		margin: auto;
+	}
+}
