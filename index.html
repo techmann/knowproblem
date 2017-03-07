@@ -23,6 +23,9 @@
     <script src="js/pace.js"></script>
     <link href="stylesheets/pace-theme-flat-top.tmpl.css" rel="stylesheet" />
 
+    <link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="icon/favicon-16x16.png" sizes="16x16" />
+
 </head>
 
 <body>
@@ -38,16 +41,16 @@
 	   	  </div>
 	      <div class="nav-links" id="myTopnav">
 	      	<ul>
-		        <li><a href="#">Problem Portal</a></li>
+<!-- 		        <li><a href="#">Problem Portal</a></li>
 		        <li><a href="#">Our Attorneys</a></li>
-		        <li><a href="#">About</a></li>
+		        <li><a href="#">About</a></li> -->
 		    </ul>
 	      </div>
-	     <div class="menu" id="pull">
+<!-- 	     <div class="menu" id="pull">
   			<span class="menu-global menu-top"></span>
   			<span class="menu-global menu-middle"></span>
   			<span class="menu-global menu-bottom"></span>
-		</div>
+		</div> -->
 	    </nav>
   	</div>
  <!-- END NAV -->
@@ -130,21 +133,21 @@
 	<div class="row">
 		<div class="large-5 medium-5 columns form" data-aos="fade-up">
 			<label>Name
-        		<input type="text" placeholder="First and/or last" />
+        		<input id="Name" type="text" placeholder="First and/or last" />
       		</label>
 		</div>
 	</div>
 	<div class="row">
 		<div class="large-5 medium-5 columns form" data-aos="fade-up">
 			<label>Email
-        		<input type="text" placeholder="example@gmail.com" />
+        		<input type="text" id="Email" placeholder="example@gmail.com" />
       		</label>
 		</div>
 	</div>
 	<div class="row">
 		<div class="large-10 medium-10 columns form-1" data-aos="fade-up">
 			<label>Tell us about your problem
-        		<textarea placeholder="The more details the better"></textarea>
+        		<textarea id="Problem-r" placeholder="The more details the better"></textarea>
       		</label>
 		</div>
 	</div>
@@ -170,7 +173,7 @@
 	<div class="row">
 		<div class="large-4 medium-4 columns large-offset-1 medium-offset-1 small-offset-1" data-aos="fade-up">
         	<div class="money">
-    			<input type="text" class="numberOnly" autocomplete="off" maxlength="4" placeholder="00.00" /><div>$</div>
+    			<input id="Budget_input" type="text" class="numberOnly" autocomplete="off" maxlength="4" placeholder="00.00" /><div>$</div>
 				</div>
 		</div>
 	</div>
@@ -186,7 +189,7 @@
 	<div class="row">
 		<div class="medium-10 columns medium-offset-1 submit" data-aos="fade-up">
 	 		<div class="btn-1" id="onclick">
-	  			<input type="button" id="submit" disabled value="SUBMIT"/>
+	  			<input type="button" id="submit" disabled value="SUBMIT" onclick="postContactToGoogle(); popup()"/>
 			</div>
 		</div>
 	</div>
@@ -208,6 +211,31 @@
   </div>
 
 </div>
+
+ <script>
+  function popup() {
+    alert("Thank you for trusting us with your problem. An attorney will be reaching out to you.")
+    window.location.reload();
+  }
+  </script>
+
+<script>
+  function postContactToGoogle() {
+  
+  	  var Name = $('#Name').val();
+      var Email = $('#Email').val();
+      var Problem = $('#Problem-r').val();
+      var Budget_slider = budget_value
+      var Budget_input = $('#Budget_input').val();
+          $.ajax({
+              url: "https://docs.google.com/forms/d/e/1FAIpQLSdARm04z5qwAYVv-rcPO3DzFZJEYvCV4mAwNYVew0Ge7rUI2w/formResponse",
+              data: { "entry.1668282666": Name, 
+              "entry.1178106597": Email, "entry.1223804947": Problem, "entry_1278469466": Budget_slider, "entry.1737709944": Budget_input},
+              type: "POST",
+              dataType: "xml",
+          });
+  }
+    </script>
 
 <script>
 // Get the modal
@@ -254,6 +282,12 @@ window.onclick = function(event) {
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script>
+  $( function() {
+    $( "#dialog" ).dialog();
+  } );
+  </script>
 
 <script>
 	AOS.init({
@@ -331,7 +365,8 @@ Menu.init();
 </script>
 
 <script>
-	var input = $('#input-range');
+var input = $('#input-range');
+var budget_value = 0;
 
 input.bind('input', function(){
 	getRangeValue(input);
@@ -344,6 +379,7 @@ function getRangeValue(e){
 	$('.value').text(value);
 	$('.range').attr('data-value', value);
 	input.attr('value', value);
+	budget_value = value;
 }
 </script>
 

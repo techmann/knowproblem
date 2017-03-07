@@ -468,6 +468,7 @@ label {
     font-weight: 500;
     box-shadow: none;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .problem {
