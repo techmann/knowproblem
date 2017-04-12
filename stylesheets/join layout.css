@@ -1,4 +1,4 @@
-
+  
 
 .main-wrapper {
   width: 100%;
@@ -31,7 +31,7 @@
 .responsive-menu-icon-line {
   width: 30px;
   height: 4px;
-  background-color: #00ddff;
+  background-color: white;
   margin: 5px;
   border-radius: 2px;
   
@@ -75,15 +75,14 @@
   padding-top: 15px;
 }
 
-
 @media (max-width: 800px) {
 
 	.main-wrapper {
-		background-color: rgba(255, 255, 255, 1);
+		background-color: rgba(0, 0, 0, 0.9);
 	}
 
 	#logo a {
-		color: #00ddff;
+		color: white;
 	}
   
   .mobile-nav {
@@ -99,11 +98,7 @@
 
  	.nav ul li a {
  		font-weight: 500;
- 		color: #00ddff
- 	}
-
- 	.nav a:hover {
- 		color: #00B1CC
+ 		color: white;
  	}
   
    .nav ul  {
@@ -128,7 +123,6 @@
 /* end of responsive style */
 }
 
-
 @media only screen and (max-width: 1023px) {
 
 	.terms p {
@@ -143,6 +137,19 @@
 	.modal-content {
 		width: 80%;
 	}
+
+	.form {
+		margin-left: 0;
+		height: 780px;
+	}
+
+	#terms p {
+		top: -92px;
+	}
+
+	.btn-1 input {
+		top: -85;
+	}
 }
 
 
@@ -151,6 +158,46 @@
 	.modal-content {
 		width: 80%;
 		height: 90%;
+	}
+
+	.nav-links li {
+	  margin: 10px 0px;
+	  width:100%;
+	  display:inline-block;
+	  text-align: center;
+	  height: 50px;
+	  background-color: rgba(255, 255, 255, 0.1);
+	}
+
+	.nav-links {
+		text-align: center;
+		position: fixed;
+		top: 80;
+		left: 0;
+		right: 0;
+	}
+
+	.nav-links li a {
+		line-height: 50px;
+		font-weight: 500;
+	}
+
+	.nav-links ul {
+		display: none;
+		text-align: center;
+		height: 80px;
+	}
+
+	#pull {
+	  display:inline-block;
+	  color:white;
+	  float: right;
+	  position:relative;
+	  top:25px;
+	  right:10px;
+	  font-size: 30px;
+	  line-height: 80px;
+	  padding-right: 20px;
 	}
 
 	#wrapper-landing {
@@ -162,9 +209,8 @@
 		margin-top: 0px;
 	}
 
-	.terms {
-		height: 140px;
-		margin-left: 40px;
+	.form p {
+		font-size: 12px;
 	}
 
 	.terms p {
@@ -177,21 +223,18 @@
 		margin: auto;
 	}
 
-	.bg-4 {
-		height: 750px;
+	.form {
+		height: 800;
 	}
 
-	.rect-2 {
-		width: 320px;
-		height: 353px;
-		top: -40px;
-	}
-
-	.landing-3 {
-		position: relative;
-		top: -50px;
-	}
-
+	.two-col p {
+  position: relative;
+  top: 9;
+  left: -5;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  color: #444;
 }
 
 }
