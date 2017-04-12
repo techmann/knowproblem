@@ -227,6 +227,10 @@
 		height: 800;
 	}
 
+	#practice {
+		top: 13px;
+	}
+
 	.two-col p {
   position: relative;
   top: 9;
@@ -235,6 +239,12 @@
   font-weight: 400;
   font-size: 16px;
   color: #444;
+}
+
+.two-col label {
+	position: relative;
+	top: -16;
+	left: 0;
 }
 
 }
