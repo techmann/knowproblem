@@ -143,6 +143,12 @@
 	.modal-content {
 		width: 80%;
 	}
+
+	.rect-2 {
+		width: 250px;
+		height: 279px;
+		top: -40px;
+	}
 }
 
 
