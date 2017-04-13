@@ -506,6 +506,10 @@ select {
     display: none;
 }
 
+.checkboxFive-1 input {
+  display: none;
+}
+
 .checkboxFive {
   width: 20px;
   margin: 0;
@@ -601,11 +605,6 @@ select {
   font-weight: 400;
   font-size: 16px;
   color: #444;
-}
-
-.two-col label {
-  position: relative;
-  top: -15;
 }
 
 .checkboxFive-1 label:hover::after {
